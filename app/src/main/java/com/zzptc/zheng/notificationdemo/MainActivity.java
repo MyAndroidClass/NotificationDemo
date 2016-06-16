@@ -38,6 +38,8 @@ public class MainActivity extends Activity {
                 //id:是通知的标记，如果发出通知ID相同就覆盖
                 //manager.notify(100, notice);
                manager.notify(rand.nextInt(), notice);
+
+                System.out.println("发送通知成功！");
             }
         });
     }
