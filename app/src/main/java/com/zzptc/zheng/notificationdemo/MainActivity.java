@@ -29,8 +29,8 @@ public class MainActivity extends Activity {
                 PendingIntent pt = PendingIntent.getActivity(MainActivity.this, 0,
                         new Intent(MainActivity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK), 0);
                 builder.setContentIntent(pt);
-                builder.setContentTitle("内容标题");
-                builder.setContentText("你有一条消息！");
+                builder.setContentTitle("内容标题是：");
+                builder.setContentText("您有一条消息，请注意查收！");
                 builder.setSmallIcon(R.drawable.ic_launcher);
                 Notification notice = builder.getNotification();
                 // 发出通知
